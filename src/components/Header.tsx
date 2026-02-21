@@ -62,7 +62,7 @@ export default function Header() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-white mb-10 max-w-2xl mx-auto"
           >
-            <p className="font-bold text-[#075c8d]">
+            <p className="font-bold">
               {t("title")} (KSS){" "}
             </p>
             {t("Header.description")}

@@ -123,7 +123,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="md:hidden bg-background/95 backdrop-blur-md rounded-lg shadow-lg mb-4 p-4"
           >
-            <div className="flex gap-2 mb-4 pb-4 border-b border-white/20">
+            <div className="flex gap-2 mb-4 pb-4 border-b border-black/40">
               {LOCALES.map(({ code, label }) => (
                 <button
                   key={code}
