@@ -31,11 +31,20 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t("title"),
     description: t("description"),
     keywords: t("keywords"),
+    icons: {
+      icon: "/kss.png",
+      shortcut: "/favicon.ico",
+      apple: "/kss.png",
+    },
     openGraph: {
       title: t("openGraph.title"),
       description: t("openGraph.description"),
+      url: "https://kinki-sultra-sinergi.com/",
+      siteName: "KSS",
+      images: "/kss.png",
       type: "website",
     },
+
   };
 }
 
