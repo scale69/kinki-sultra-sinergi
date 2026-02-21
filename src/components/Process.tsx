@@ -2,36 +2,22 @@
 
 import { motion } from 'framer-motion'
 import { MessageCircle, ClipboardCheck, FileText, Plane, HeartHandshake } from 'lucide-react'
+import { useTranslations } from 'next-intl';
 
-const steps = [
-  {
-    icon: MessageCircle,
-    title: 'Konsultasi Awal',
-    description: 'Calon peserta mendapatkan penjelasan menyeluruh mengenai program dan persyaratan.',
-  },
-  {
-    icon: ClipboardCheck,
-    title: 'Seleksi & Evaluasi',
-    description: 'Proses seleksi berdasarkan kemampuan, kesiapan, dan kesesuaian bidang kerja.',
-  },
-  {
-    icon: FileText,
-    title: 'Persiapan Dokumen',
-    description: 'Pendampingan administrasi sesuai regulasi Jepang.',
-  },
-  {
-    icon: Plane,
-    title: 'Penempatan Kerja',
-    description: 'Koordinasi dengan perusahaan penerima dan proses keberangkatan.',
-  },
-  {
-    icon: HeartHandshake,
-    title: 'Pendampingan di Jepang',
-    description: 'Monitoring dan dukungan selama masa kerja.',
-  },
-]
+const icons = [MessageCircle, ClipboardCheck, FileText, Plane, HeartHandshake]
 
 export default function Process() {
+  const t = useTranslations("data.Process");
+
+
+  const steps = [
+    { icon: icons[0], title: t("steps.1.title"), description: t("steps.1.description") },
+    { icon: icons[1], title: t("steps.2.title"), description: t("steps.2.description") },
+    { icon: icons[2], title: t("steps.3.title"), description: t("steps.3.description") },
+    { icon: icons[3], title: t("steps.4.title"), description: t("steps.4.description") },
+    { icon: icons[4], title: t("steps.5.title"), description: t("steps.5.description") },
+  ]
+
   return (
     <section id="process" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
@@ -43,13 +29,13 @@ export default function Process() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-[#4DA8DA]/10 text-[#1B6CA8] rounded-full text-sm font-medium mb-4">
-            Alur Proses
+            {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Langkah Menuju <span className="text-[#1B6CA8]">Karier di Jepang</span>
+            {t("title")}{" "} <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Proses yang jelas dan terstruktur untuk memastikan perjalanan karier Anda berjalan lancar.
+            {t("description")}
           </p>
         </motion.div>
 

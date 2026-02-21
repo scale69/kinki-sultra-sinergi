@@ -1,47 +1,9 @@
 "use client"
-
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Languages, Handshake, GraduationCap, FileCheck, Users, Building } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
-const services = [
-  {
-    icon: Languages,
-    title: 'Penerjemah',
-    description: 'Interpretasi & penerjemahan profesional untuk dokumen resmi dan komunikasi bisnis.',
-    features: [
-      'Dokumen resmi perusahaan',
-      'Dokumen administrasi kerja',
-      'Kontrak kerja',
-      'Pendampingan komunikasi'
-    ],
-    color: 'from-blue-500 to-cyan-500'
-  },
-  {
-    icon: Handshake,
-    title: 'Connect Company',
-    description: 'Menghubungkan tenaga kerja Indonesia dengan perusahaan di Jepang.',
-    features: [
-      'Konsultasi penempatan kerja',
-      'Proses matching sesuai keahlian',
-      'Pendampingan wawancara',
-      'Koordinasi administrasi awal'
-    ],
-    color: 'from-indigo-500 to-purple-500'
-  },
-  {
-    icon: GraduationCap,
-    title: 'Magang & Tokutei Ginou',
-    description: 'Pendampingan program magang dan Tokutei Ginou (Specified Skilled Worker).',
-    features: [
-      'Koordinasi dengan perusahaan',
-      'Pendampingan administrasi',
-      'Monitoring selama program',
-      'Konsultasi persyaratan'
-    ],
-    color: 'from-emerald-500 to-teal-500'
-  }
-]
 
 const container = {
   hidden: { opacity: 0 },
@@ -57,6 +19,46 @@ const item = {
 }
 
 export default function Services() {
+  const t = useTranslations("data.Services");
+
+  const services = [
+    {
+      icon: Languages,
+      title: t("items.translator.title"),
+      description: t("items.translator.description"),
+      features: [
+        t("items.translator.features.1"),
+        t("items.translator.features.2"),
+        t("items.translator.features.3"),
+        t("items.translator.features.4"),
+      ],
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      icon: Handshake,
+      title: t("items.connect.title"),
+      description: t("items.connect.description"),
+      features: [
+        t("items.connect.features.1"),
+        t("items.connect.features.2"),
+        t("items.connect.features.3"),
+        t("items.connect.features.4"),
+      ],
+      color: 'from-indigo-500 to-purple-500'
+    },
+    {
+      icon: GraduationCap,
+      title: t("items.internship.title"),
+      description: t("items.internship.description"),
+      features: [
+        t("items.internship.features.1"),
+        t("items.internship.features.2"),
+        t("items.internship.features.3"),
+        t("items.internship.features.4"),
+      ],
+      color: 'from-emerald-500 to-teal-500'
+    }
+  ]
   return (
     <section id="services" className="py-20 md:py-28 bg-muted/50">
       <div className="container mx-auto px-4">
@@ -68,13 +70,14 @@ export default function Services() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-[#4DA8DA]/10 text-[#1B6CA8] rounded-full text-sm font-medium mb-4">
-            Layanan Kami
+            {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Solusi Lengkap untuk <span className="text-[#1B6CA8]">Karier di Jepang</span>
+            {t("title")}{" "}
+            <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Kami menyediakan berbagai layanan profesional untuk mendukung perjalanan karier Anda di Jepang.
+            {t("description")}
           </p>
         </motion.div>
 

@@ -2,17 +2,22 @@
 
 import { motion } from 'framer-motion'
 import { GraduationCap, Building2, Award } from 'lucide-react'
+import { useTranslations } from 'next-intl';
 
-const partners = [
-  { name: 'Sekolah Mitra 1', icon: GraduationCap },
-  { name: 'Institusi Pendidikan 2', icon: Building2 },
-  { name: 'Sekolah Mitra 3', icon: GraduationCap },
-  { name: 'Lembaga Pelatihan 4', icon: Award },
-  { name: 'Sekolah Mitra 5', icon: GraduationCap },
-  { name: 'Institusi Pendidikan 6', icon: Building2 },
-]
+
 
 export default function Partners() {
+  const t = useTranslations("data.Partners");
+
+  const partners = [
+    { name: t("items.1"), icon: GraduationCap },
+    { name: t("items.2"), icon: Building2 },
+    { name: t("items.3"), icon: GraduationCap },
+    { name: t("items.4"), icon: Award },
+    { name: t("items.5"), icon: GraduationCap },
+    { name: t("items.6"), icon: Building2 },
+  ]
+
   return (
     <section className="py-20 md:py-28 bg-ocean-light dark:bg-[#0A3D62]/20">
       <div className="container mx-auto px-4">
@@ -24,14 +29,13 @@ export default function Partners() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-[#1B6CA8]/10 text-[#1B6CA8] rounded-full text-sm font-medium mb-4">
-            Kerja Sama
+            {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Mitra <span className="text-[#1B6CA8]">Sekolah & Institusi</span>
+            {t("title")}{" "} <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Bekerja sama dengan beberapa sekolah dan institusi terpercaya untuk mempersiapkan 
-            calon tenaga kerja dengan keterampilan dan bahasa yang memadai.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -67,7 +71,7 @@ export default function Partners() {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="text-center mt-10 text-muted-foreground"
         >
-          Kami percaya bahwa pendidikan adalah fondasi utama kesuksesan karier di Jepang.
+          {t("footer")}
         </motion.p>
       </div>
     </section>

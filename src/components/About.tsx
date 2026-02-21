@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Building2, Target, Flag, Shield, Users, Globe } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 const container = {
   hidden: { opacity: 0 },
@@ -17,13 +18,17 @@ const item = {
   show: { opacity: 1, y: 0 }
 }
 
-const highlights = [
-  { icon: Shield, text: 'Transparan & Legal' },
-  { icon: Users, text: 'Tim Profesional' },
-  { icon: Globe, text: 'Jaringan Luas' },
-]
+
 
 export default function About() {
+  const t = useTranslations("data.About");
+
+  const highlights = [
+    { icon: Shield, text: t("Profile.highlights.transparent") },
+    { icon: Users, text: t("Profile.highlights.professional") },
+    { icon: Globe, text: t("Profile.highlights.network") },
+  ]
+
   return (
     <section id="about" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
@@ -35,13 +40,13 @@ export default function About() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-[#4DA8DA]/10 text-[#1B6CA8] rounded-full text-sm font-medium mb-4">
-            Tentang Kami
+            {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Mengenal <span className="text-[#1B6CA8]">Kinki Sultra Sinergi</span>
+            {t("title")}{" "} <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Mitra terpercaya dalam menjembatani tenaga kerja Indonesia menuju peluang kerja profesional di Jepang.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -60,13 +65,10 @@ export default function About() {
                   <div className="p-3 bg-white/10 rounded-lg">
                     <Building2 className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl font-bold">Profil Perusahaan</h3>
+                  <h3 className="text-xl font-bold">{t("Profile.title")}</h3>
                 </div>
                 <p className="text-white/90 leading-relaxed">
-                  Kinki Sultra Sinergi (KSS) merupakan Kantor Sanding Organisasi (SO) yang berbasis di Jepang
-                  dan berfokus pada pendampingan tenaga kerja Indonesia yang ingin bekerja maupun berkembang
-                  karier di Jepang. Kami hadir sebagai penghubung antara tenaga kerja Indonesia, sekolah mitra,
-                  dan perusahaan Jepang untuk memastikan proses berjalan sesuai regulasi serta standar profesional Jepang.
+                  {t("Profile.description")}
                 </p>
                 <div className="flex flex-wrap gap-3 mt-6">
                   {highlights.map((h, i) => (
@@ -88,11 +90,10 @@ export default function About() {
                   <div className="p-3 bg-[#4DA8DA]/10 rounded-lg">
                     <Target className="h-6 w-6 text-[#1B6CA8]" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">Visi</h3>
+                  <h3 className="text-xl font-bold text-foreground">{t("Vision.title")}</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Menjadi mitra terpercaya dalam menjembatani tenaga kerja Indonesia menuju peluang kerja
-                  profesional dan berkelanjutan di Jepang.
+                  {t("Vision.description")}
                 </p>
               </CardContent>
             </Card>
@@ -106,14 +107,14 @@ export default function About() {
                   <div className="p-3 bg-[#4DA8DA]/10 rounded-lg">
                     <Flag className="h-6 w-6 text-[#1B6CA8]" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground">Misi</h3>
+                  <h3 className="text-xl font-bold text-foreground">{t("Mission.title")}</h3>
                 </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {[
-                    'Memberikan pendampingan menyeluruh bagi tenaga kerja Indonesia di Jepang',
-                    'Membangun kerja sama strategis dengan perusahaan dan institusi pendidikan',
-                    'Menjamin proses administrasi yang sesuai regulasi Jepang',
-                    'Mendukung pengembangan karier jangka panjang tenaga kerja Indonesia',
+                    t("Mission.items.1"),
+                    t("Mission.items.2"),
+                    t("Mission.items.3"),
+                    t("Mission.items.4"),
                   ].map((mission, i) => (
                     <div key={i} className="flex gap-3 p-4 bg-muted rounded-lg">
                       <span className="flex-shrink-0 w-8 h-8 bg-[#1B6CA8] text-white rounded-full flex items-center justify-center font-bold text-sm">

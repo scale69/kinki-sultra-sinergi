@@ -2,25 +2,27 @@
 
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const quickLinks = [
-  { name: 'Beranda', href: '/' },
-  { name: 'Tentang Kami', href: '#about' },
-  { name: 'Layanan', href: '#services' },
-  { name: 'Proses', href: '#process' },
-  { name: 'Kontak', href: '#contact' },
-]
-
-const services = [
-  'Penerjemah',
-  'Connect Company',
-  'Program Magang',
-  'Tokutei Ginou',
-]
 
 export default function Footer() {
+  const t = useTranslations("data.Footer");
+  const quickLinks = [
+    { name: t("navigation.items.home"), href: '/' },
+    { name: t("navigation.items.about"), href: '#about' },
+    { name: t("navigation.items.services"), href: '#services' },
+    { name: t("navigation.items.process"), href: '#process' },
+    { name: t("navigation.items.contact"), href: '#contact' },
+  ]
+
+  const services = [
+    t("services.items.1"),
+    t("services.items.2"),
+    t("services.items.3"),
+    t("services.items.4"),
+  ]
   return (
     <footer className="bg-gradient-to-br from-[#0A3D62] via-[#0A3D62] to-[#1B6CA8] text-white">
       <div className="container mx-auto px-4 py-16">
@@ -40,8 +42,7 @@ export default function Footer() {
               <span className="font-bold text-xl">Kinki Sultra Sinergi</span>
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
-              Mitra profesional tenaga kerja Indonesia di Jepang.
-              Transparan • Legal • Terpercaya
+              {t("description")}
             </p>
             <div className="flex gap-3">
               <div className="px-3 py-1 bg-white/10 rounded-full text-xs">Transparan</div>
@@ -61,13 +62,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <Link
+                  <a
                     href={link.href}
                     className="text-white/70 hover:text-white transition-colors flex items-center gap-2 group"
                   >
                     <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -80,7 +81,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="font-bold text-lg mb-6">Layanan</h3>
+            <h3 className="font-bold text-lg mb-6">{t("services.title")}</h3>
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index} className="text-white/70 flex items-center gap-2">
@@ -98,12 +99,12 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <h3 className="font-bold text-lg mb-6">Kontak</h3>
+            <h3 className="font-bold text-lg mb-6">{t("contact.title")}</h3>
             <ul className="space-y-4">
               <li>
                 <a className="flex items-start gap-3" href="https://maps.app.goo.gl/ymyYrhzLB7pht25p9" target='_blank'>
                   <MapPin className="h-5 w-5 text-[#4DA8DA] flex-shrink-0 mt-0.5" />
-                  <span className="text-white/70">Sulawesi Tenggara, Indonesia</span>
+                  <span className="text-white/70">{t("contact.address")}</span>
                 </a>
               </li>
               <li>

@@ -1,0 +1,224 @@
+{
+    "data": {
+        "title": "Kinki Sultra Sinergi",
+        "MetaData": {
+            "title": "Kinki Sultra Sinergi (KSS) - Jembatan Karier Indonesia-Jepang",
+            "description": "KSS adalah Kantor Sanding Organisasi (SO) di Jepang yang membantu tenaga kerja Indonesia meraih karier yang aman, legal, dan berkelanjutan di Jepang.",
+            "keywords": "tenaga kerja indonesia jepang, magang jepang, tokutei ginou, kerja di jepang, SO jepang",
+            "openGraph": {
+                "title": "Kinki Sultra Sinergi (KSS) - Jembatan Karier Indonesia-Jepang",
+                "description": "Mitra profesional tenaga kerja Indonesia di Jepang. Transparan, Legal, Terpercaya."
+            }
+        },
+        "Navbar": {
+            "Link": {
+                "Home": "Beranda",
+                "About": "Tentang",
+                "Service": "Layanan",
+                "Process": "Peoses",
+                "Contact": "Kontak"
+            }
+        },
+        "Header": {
+            "label": "Kantor Sanding Organisasi (SO) di Jepang",
+            "id_jp": "Jembatan Karier <p>Indonesia – Jepang</p> <blue>Bersama KSS</blue>",
+            "title": "Kinki Sultra Sinergi",
+            "description": "Berkomitmen membantu tenaga kerja Indonesia meraih karier yang aman, legal, dan berkelanjutan di Jepang.",
+            "Button": {
+                "service": "Lihat Layanan",
+                "consultation": "Konsultasi Sekarang"
+            }
+        },
+        "About": {
+            "badge": "Tentang Kami",
+            "title": "Mengenal",
+            "titleHighlight": "Kinki Sultra Sinergi",
+            "description": "Mitra terpercaya dalam menjembatani tenaga kerja Indonesia menuju peluang kerja profesional di Jepang.",
+            "Profile": {
+                "title": "Profil Perusahaan",
+                "description": "Kinki Sultra Sinergi (KSS) merupakan Kantor Sanding Organisasi (SO) yang berbasis di Jepang dan berfokus pada pendampingan tenaga kerja Indonesia yang ingin bekerja maupun berkembang karier di Jepang. Kami hadir sebagai penghubung antara tenaga kerja Indonesia, sekolah mitra, dan perusahaan Jepang untuk memastikan proses berjalan sesuai regulasi serta standar profesional Jepang.",
+                "highlights": {
+                    "transparent": "Transparan & Legal",
+                    "professional": "Tim Profesional",
+                    "network": "Jaringan Luas"
+                }
+            },
+            "Vision": {
+                "title": "Visi",
+                "description": "Menjadi mitra terpercaya dalam menjembatani tenaga kerja Indonesia menuju peluang kerja profesional dan berkelanjutan di Jepang."
+            },
+            "Mission": {
+                "title": "Misi",
+                "items": {
+                    "1": "Memberikan pendampingan menyeluruh bagi tenaga kerja Indonesia di Jepang",
+                    "2": "Membangun kerja sama strategis dengan perusahaan dan institusi pendidikan",
+                    "3": "Menjamin proses administrasi yang sesuai regulasi Jepang",
+                    "4": "Mendukung pengembangan karier jangka panjang tenaga kerja Indonesia"
+                }
+            }
+        },
+        "Services": {
+            "badge": "Layanan Kami",
+            "title": "Solusi Lengkap untuk",
+            "titleHighlight": "Karier di Jepang",
+            "description": "Kami menyediakan berbagai layanan profesional untuk mendukung perjalanan karier Anda di Jepang.",
+            "items": {
+                "translator": {
+                    "title": "Penerjemah",
+                    "description": "Interpretasi & penerjemahan profesional untuk dokumen resmi dan komunikasi bisnis.",
+                    "features": {
+                        "1": "Dokumen resmi perusahaan",
+                        "2": "Dokumen administrasi kerja",
+                        "3": "Kontrak kerja",
+                        "4": "Pendampingan komunikasi"
+                    }
+                },
+                "connect": {
+                    "title": "Connect Company",
+                    "description": "Menghubungkan tenaga kerja Indonesia dengan perusahaan di Jepang.",
+                    "features": {
+                        "1": "Konsultasi penempatan kerja",
+                        "2": "Proses matching sesuai keahlian",
+                        "3": "Pendampingan wawancara",
+                        "4": "Koordinasi administrasi awal"
+                    }
+                },
+                "internship": {
+                    "title": "Magang & Tokutei Ginou",
+                    "description": "Pendampingan program magang dan Tokutei Ginou (Specified Skilled Worker).",
+                    "features": {
+                        "1": "Koordinasi dengan perusahaan",
+                        "2": "Pendampingan administrasi",
+                        "3": "Monitoring selama program",
+                        "4": "Konsultasi persyaratan"
+                    }
+                }
+            }
+        },
+        "Partners": {
+            "badge": "Kerja Sama",
+            "title": "Mitra",
+            "titleHighlight": "Sekolah & Institusi",
+            "description": "Bekerja sama dengan beberapa sekolah dan institusi terpercaya untuk mempersiapkan calon tenaga kerja dengan keterampilan dan bahasa yang memadai.",
+            "footer": "Kami percaya bahwa pendidikan adalah fondasi utama kesuksesan karier di Jepang.",
+            "items": {
+                "1": "Sekolah Mitra 1",
+                "2": "Institusi Pendidikan 2",
+                "3": "Sekolah Mitra 3",
+                "4": "Lembaga Pelatihan 4",
+                "5": "Sekolah Mitra 5",
+                "6": "Institusi Pendidikan 6"
+            }
+        },
+        "Process": {
+            "badge": "Alur Proses",
+            "title": "Langkah Menuju",
+            "titleHighlight": "Karier di Jepang",
+            "description": "Proses yang jelas dan terstruktur untuk memastikan perjalanan karier Anda berjalan lancar.",
+            "steps": {
+                "1": {
+                    "title": "Konsultasi Awal",
+                    "description": "Calon peserta mendapatkan penjelasan menyeluruh mengenai program dan persyaratan."
+                },
+                "2": {
+                    "title": "Seleksi & Evaluasi",
+                    "description": "Proses seleksi berdasarkan kemampuan, kesiapan, dan kesesuaian bidang kerja."
+                },
+                "3": {
+                    "title": "Persiapan Dokumen",
+                    "description": "Pendampingan administrasi sesuai regulasi Jepang."
+                },
+                "4": {
+                    "title": "Penempatan Kerja",
+                    "description": "Koordinasi dengan perusahaan penerima dan proses keberangkatan."
+                },
+                "5": {
+                    "title": "Pendampingan di Jepang",
+                    "description": "Monitoring dan dukungan selama masa kerja."
+                }
+            }
+        },
+        "Testimonials": {
+            "badge": "Testimoni",
+            "title": "Apa Kata",
+            "titleHighlight": "Mereka?",
+            "description": "Pengalaman nyata dari peserta yang telah berhasil berkarier di Jepang bersama KSS.",
+            "items": {
+                "1": {
+                    "name": "Budi Santoso",
+                    "role": "Peserta Program Tokutei Ginou",
+                    "content": "Berkat KSS, proses saya bekerja di Jepang menjadi lebih jelas dan terarah. Saya merasa didampingi sejak awal hingga bekerja. Sangat profesional dan terpercaya."
+                },
+                "2": {
+                    "name": "Siti Rahayu",
+                    "role": "Peserta Magang",
+                    "content": "Komunikasi dengan perusahaan menjadi lebih mudah karena ada dukungan penerjemah dari KSS. Tim sangat responsif dan membantu."
+                },
+                "3": {
+                    "name": "Ahmad Hidayat",
+                    "role": "Peserta Program Tokutei Ginou",
+                    "content": "KSS membantu saya dari awal sampai saya bisa bekerja di Jepang dengan aman. Semua proses transparan dan sesuai regulasi."
+                }
+            }
+        },
+        "Contact": {
+            "badge": "Hubungi Kami",
+            "title": "Siap Memulai",
+            "titleHighlight": "Perjalanan Anda?",
+            "description": "Kami siap membantu Anda memulai langkah menuju karier profesional di Jepang.",
+            "items": {
+                "address": {
+                    "title": "Alamat Kantor",
+                    "content": "Sulawesi Tenggara, Indonesia",
+                    "subContent": "BTN Pesona Alam Tahap 2 Blok F No.18, Kel. Anduonohu, Kec. Poasia kota Kendari"
+                },
+                "email": {
+                    "title": "Email",
+                    "content": "kinki.kss2021@gmail.com",
+                    "subContent": "Balas dalam 24 jam"
+                },
+                "phone": {
+                    "title": "WhatsApp",
+                    "content": "+81 80-8308-5922",
+                    "subContent": "Tersedia untuk konsultasi"
+                },
+                "hours": {
+                    "title": "Jam Operasional",
+                    "content": "Senin – Jumat",
+                    "subContent": "09.00 – 18.00 JST"
+                }
+            }
+        },
+        "Footer": {
+            "description": "Mitra profesional tenaga kerja Indonesia di Jepang. Transparan • Legal • Terpercaya",
+            "badges": {
+                "1": "Transparan",
+                "2": "Legal",
+                "3": "Terpercaya"
+            },
+            "navigation": {
+                "title": "Navigasi",
+                "items": {
+                    "home": "Beranda",
+                    "about": "Tentang Kami",
+                    "services": "Layanan",
+                    "process": "Proses",
+                    "contact": "Kontak"
+                }
+            },
+            "services": {
+                "title": "Layanan",
+                "items": {
+                    "1": "Penerjemah",
+                    "2": "Connect Company",
+                    "3": "Program Magang",
+                    "4": "Tokutei Ginou"
+                }
+            },
+            "contact": {
+                "title": "Kontak",
+                "address": "Sulawesi Tenggara, Indonesia"
+            }
+        }
+    }
+}

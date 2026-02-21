@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, FileText } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("data");
   return (
     <section
       id="hero"
@@ -36,7 +38,7 @@ export default function Header() {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6">
-              Kantor Sanding Organisasi (SO) di Jepang
+              {t("Header.label")}
             </span>
           </motion.div>
 
@@ -46,8 +48,12 @@ export default function Header() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
           >
-            Jembatan Karier <p>Indonesia – Jepang</p>{" "}
-            <span className="text-[#075c8d]">Bersama KSS</span>
+            {t.rich("Header.id_jp", {
+              p: (chunks) => <p>{chunks}</p>,
+              blue: (chunks) => (
+                <span className="text-[#075c8d]">{chunks}</span>
+              ),
+            })}
           </motion.h1>
 
           <motion.div
@@ -57,10 +63,9 @@ export default function Header() {
             className="text-lg md:text-xl text-white mb-10 max-w-2xl mx-auto"
           >
             <p className="font-bold text-[#075c8d]">
-              Kinki Sultra Sinergi (KSS){" "}
+              {t("title")} (KSS){" "}
             </p>
-            berkomitmen membantu tenaga kerja Indonesia meraih karier yang aman,
-            legal, dan berkelanjutan di Jepang.
+            {t("Header.description")}
           </motion.div>
 
           <motion.div
@@ -75,7 +80,7 @@ export default function Header() {
               asChild
             >
               <a href="#contact">
-                Konsultasi Sekarang
+                {t("Header.Button.consultation")}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
@@ -87,7 +92,8 @@ export default function Header() {
             >
               <a href="#services" className="flex items-center text-white">
                 <FileText className="mr-2 h-5 w-5" />
-                Lihat Layanan
+                {t("Header.Button.service")}
+
               </a>
             </Button>
           </motion.div>

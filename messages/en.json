@@ -1,0 +1,224 @@
+{
+    "data": {
+        "title": "Kinki Sultra Sinergi",
+        "MetaData": {
+            "title": "Kinki Sultra Sinergi (KSS) - Indonesia–Japan Career Bridge",
+            "description": "KSS is a Supporting Organization (SO) in Japan helping Indonesian workers achieve safe, legal, and sustainable careers in Japan.",
+            "keywords": "indonesian workers japan, internship japan, tokutei ginou, work in japan, SO japan",
+            "openGraph": {
+                "title": "Kinki Sultra Sinergi (KSS) - Indonesia–Japan Career Bridge",
+                "description": "Professional partner for Indonesian workers in Japan. Transparent, Legal, Trusted."
+            }
+        },
+        "Navbar": {
+            "Link": {
+                "Home": "Home",
+                "About": "About",
+                "Service": "Services",
+                "Process": "Process",
+                "Contact": "Contact"
+            }
+        },
+        "Header": {
+            "label": "Supporting Organization (SO) in Japan",
+            "id_jp": "Bridge to Your Career <p>Indonesia – Japan</p> <blue>With KSS</blue>",
+            "title": "Kinki Sultra Sinergi",
+            "description": "Committed to helping Indonesian workers achieve safe, legal, and sustainable careers in Japan.",
+            "Button": {
+                "service": "View Services",
+                "consultation": "Consult Now"
+            }
+        },
+        "About": {
+            "badge": "About Us",
+            "title": "Meet",
+            "titleHighlight": "Kinki Sultra Sinergi",
+            "description": "A trusted partner in bridging Indonesian workers toward professional career opportunities in Japan.",
+            "Profile": {
+                "title": "Company Profile",
+                "description": "Kinki Sultra Sinergi (KSS) is a Supporting Organization (SO) based in Japan, focused on assisting Indonesian workers who wish to work or advance their careers in Japan. We serve as a bridge between Indonesian workers, partner schools, and Japanese companies to ensure the process runs in accordance with regulations and Japanese professional standards.",
+                "highlights": {
+                    "transparent": "Transparent & Legal",
+                    "professional": "Professional Team",
+                    "network": "Wide Network"
+                }
+            },
+            "Vision": {
+                "title": "Vision",
+                "description": "To become a trusted partner in bridging Indonesian workers toward professional and sustainable career opportunities in Japan."
+            },
+            "Mission": {
+                "title": "Mission",
+                "items": {
+                    "1": "Provide comprehensive support for Indonesian workers in Japan",
+                    "2": "Build strategic partnerships with companies and educational institutions",
+                    "3": "Ensure administrative processes comply with Japanese regulations",
+                    "4": "Support long-term career development for Indonesian workers"
+                }
+            }
+        },
+        "Services": {
+            "badge": "Our Services",
+            "title": "Complete Solutions for",
+            "titleHighlight": "Careers in Japan",
+            "description": "We provide a wide range of professional services to support your career journey in Japan.",
+            "items": {
+                "translator": {
+                    "title": "Translator",
+                    "description": "Professional interpretation & translation for official documents and business communication.",
+                    "features": {
+                        "1": "Official company documents",
+                        "2": "Work administration documents",
+                        "3": "Employment contracts",
+                        "4": "Communication assistance"
+                    }
+                },
+                "connect": {
+                    "title": "Connect Company",
+                    "description": "Connecting Indonesian workers with companies in Japan.",
+                    "features": {
+                        "1": "Job placement consultation",
+                        "2": "Skill-based matching process",
+                        "3": "Interview assistance",
+                        "4": "Initial administrative coordination"
+                    }
+                },
+                "internship": {
+                    "title": "Internship & Tokutei Ginou",
+                    "description": "Support for internship programs and Tokutei Ginou (Specified Skilled Worker).",
+                    "features": {
+                        "1": "Coordination with companies",
+                        "2": "Administrative assistance",
+                        "3": "Monitoring during the program",
+                        "4": "Requirements consultation"
+                    }
+                }
+            }
+        },
+        "Partners": {
+            "badge": "Partnerships",
+            "title": "Partner",
+            "titleHighlight": "Schools & Institutions",
+            "description": "Collaborating with trusted schools and institutions to prepare prospective workers with adequate skills and language proficiency.",
+            "footer": "We believe education is the primary foundation for career success in Japan.",
+            "items": {
+                "1": "Partner School 1",
+                "2": "Educational Institution 2",
+                "3": "Partner School 3",
+                "4": "Training Institute 4",
+                "5": "Partner School 5",
+                "6": "Educational Institution 6"
+            }
+        },
+        "Process": {
+            "badge": "Process Flow",
+            "title": "Steps Toward",
+            "titleHighlight": "a Career in Japan",
+            "description": "A clear and structured process to ensure your career journey runs smoothly.",
+            "steps": {
+                "1": {
+                    "title": "Initial Consultation",
+                    "description": "Prospective participants receive a comprehensive explanation of the program and requirements."
+                },
+                "2": {
+                    "title": "Selection & Evaluation",
+                    "description": "Selection process based on skills, readiness, and suitability for the job field."
+                },
+                "3": {
+                    "title": "Document Preparation",
+                    "description": "Administrative assistance in accordance with Japanese regulations."
+                },
+                "4": {
+                    "title": "Job Placement",
+                    "description": "Coordination with the receiving company and departure process."
+                },
+                "5": {
+                    "title": "Support in Japan",
+                    "description": "Monitoring and support throughout the working period."
+                }
+            }
+        },
+        "Testimonials": {
+            "badge": "Testimonials",
+            "title": "What Do",
+            "titleHighlight": "They Say?",
+            "description": "Real experiences from participants who have successfully built careers in Japan with KSS.",
+            "items": {
+                "1": {
+                    "name": "Budi Santoso",
+                    "role": "Tokutei Ginou Program Participant",
+                    "content": "Thanks to KSS, my process of working in Japan became clearer and more directed. I felt supported from the very beginning until I started working. Very professional and trustworthy."
+                },
+                "2": {
+                    "name": "Siti Rahayu",
+                    "role": "Internship Participant",
+                    "content": "Communication with the company became much easier thanks to the translator support from KSS. The team is very responsive and helpful."
+                },
+                "3": {
+                    "name": "Ahmad Hidayat",
+                    "role": "Tokutei Ginou Program Participant",
+                    "content": "KSS helped me from the beginning until I could work safely in Japan. The entire process was transparent and compliant with regulations."
+                }
+            }
+        },
+        "Contact": {
+            "badge": "Contact Us",
+            "title": "Ready to Start",
+            "titleHighlight": "Your Journey?",
+            "description": "We are ready to help you take the first step toward a professional career in Japan.",
+            "items": {
+                "address": {
+                    "title": "Office Address",
+                    "content": "Southeast Sulawesi, Indonesia",
+                    "subContent": "BTN Pesona Alam Phase 2 Block F No.18, Kel. Anduonohu, Kec. Poasia, Kendari City"
+                },
+                "email": {
+                    "title": "Email",
+                    "content": "kinki.kss2021@gmail.com",
+                    "subContent": "Reply within 24 hours"
+                },
+                "phone": {
+                    "title": "WhatsApp",
+                    "content": "+81 80-8308-5922",
+                    "subContent": "Available for consultation"
+                },
+                "hours": {
+                    "title": "Office Hours",
+                    "content": "Monday – Friday",
+                    "subContent": "09:00 – 18:00 JST"
+                }
+            }
+        },
+        "Footer": {
+            "description": "Professional partner for Indonesian workers in Japan. Transparent • Legal • Trusted",
+            "badges": {
+                "1": "Transparent",
+                "2": "Legal",
+                "3": "Trusted"
+            },
+            "navigation": {
+                "title": "Navigation",
+                "items": {
+                    "home": "Home",
+                    "about": "About Us",
+                    "services": "Services",
+                    "process": "Process",
+                    "contact": "Contact"
+                }
+            },
+            "services": {
+                "title": "Services",
+                "items": {
+                    "1": "Translator",
+                    "2": "Connect Company",
+                    "3": "Internship Program",
+                    "4": "Tokutei Ginou"
+                }
+            },
+            "contact": {
+                "title": "Contact",
+                "address": "Southeast Sulawesi, Indonesia"
+            }
+        }
+    }
+}

@@ -5,30 +5,19 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
-const testimonials = [
-  {
-    name: 'Budi Santoso',
-    role: 'Peserta Program Tokutei Ginou',
-    content: 'Berkat KSS, proses saya bekerja di Jepang menjadi lebih jelas dan terarah. Saya merasa didampingi sejak awal hingga bekerja. Sangat profesional dan terpercaya.',
-    rating: 5,
-  },
-  {
-    name: 'Siti Rahayu',
-    role: 'Peserta Magang',
-    content: 'Komunikasi dengan perusahaan menjadi lebih mudah karena ada dukungan penerjemah dari KSS. Tim sangat responsif dan membantu.',
-    rating: 5,
-  },
-  {
-    name: 'Ahmad Hidayat',
-    role: 'Peserta Program Tokutei Ginou',
-    content: 'KSS membantu saya dari awal sampai saya bisa bekerja di Jepang dengan aman. Semua proses transparan dan sesuai regulasi.',
-    rating: 5,
-  },
-]
+
 
 export default function Testimonials() {
+  const t = useTranslations("data.Testimonials");
+
   const [current, setCurrent] = useState(0)
+  const testimonials = [
+    { name: t("items.1.name"), role: t("items.1.role"), content: t("items.1.content"), rating: 5 },
+    { name: t("items.2.name"), role: t("items.2.role"), content: t("items.2.content"), rating: 5 },
+    { name: t("items.3.name"), role: t("items.3.role"), content: t("items.3.content"), rating: 5 },
+  ]
 
   const next = () => setCurrent((prev) => (prev + 1) % testimonials.length)
   const prev = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length)
@@ -44,13 +33,14 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-[#4DA8DA]/10 text-[#1B6CA8] rounded-full text-sm font-medium mb-4">
-            Testimoni
+            {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Apa Kata <span className="text-[#1B6CA8]">Mereka?</span>
+            {t("title")}{" "}
+            <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Pengalaman nyata dari peserta yang telah berhasil berkarier di Jepang bersama KSS.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -101,9 +91,8 @@ export default function Testimonials() {
                   <button
                     key={index}
                     onClick={() => setCurrent(index)}
-                    className={`w-2.5 h-2.5 rounded-full transition-all ${
-                      index === current ? 'bg-[#1B6CA8] w-8' : 'bg-[#1B6CA8]/30'
-                    }`}
+                    className={`w-2.5 h-2.5 rounded-full transition-all ${index === current ? 'bg-[#1B6CA8] w-8' : 'bg-[#1B6CA8]/30'
+                      }`}
                   />
                 ))}
               </div>

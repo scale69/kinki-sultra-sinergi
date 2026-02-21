@@ -3,39 +3,41 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const contactInfo = [
-  {
-    icon: MapPin,
-    title: "Alamat Kantor",
-    content: "Sulawasi Tenggara, Indonesia",
-    subContent:
-      "BTN Pesona Alam Tahap 2 Blok F No.18, Kel. Anduonohu, Kec. Poasia kota Kendari",
-    url: "https://maps.app.goo.gl/ymyYrhzLB7pht25p9"
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    content: "kinki.kss2021@gmail.com",
-    subContent: "Balas dalam 24 jam",
-    url: "mailto:kinki.kss2021@gmail.com"
-  },
-  {
-    icon: Phone,
-    title: "WhatsApp",
-    content: "+81 80-8308-5922",
-    subContent: "Tersedia untuk konsultasi",
-    url: "https://wa.me/818083085922"
-  },
-  {
-    icon: Clock,
-    title: "Jam Operasional",
-    content: "Senin – Jumat",
-    subContent: "09.00 – 18.00 JST",
-  },
-];
+
 
 export default function Contact() {
+  const t = useTranslations("data.Contact");
+  const contactInfo = [
+    {
+      icon: MapPin,
+      title: t("items.address.title"),
+      content: t("items.address.content"),
+      subContent: t("items.address.subContent"),
+      url: "https://maps.app.goo.gl/ymyYrhzLB7pht25p9",
+    },
+    {
+      icon: Mail,
+      title: t("items.email.title"),
+      content: t("items.email.content"),
+      subContent: t("items.email.subContent"),
+      url: "mailto:kinki.kss2021@gmail.com",
+    },
+    {
+      icon: Phone,
+      title: t("items.phone.title"),
+      content: t("items.phone.content"),
+      subContent: t("items.phone.subContent"),
+      url: "https://wa.me/818083085922",
+    },
+    {
+      icon: Clock,
+      title: t("items.hours.title"),
+      content: t("items.hours.content"),
+      subContent: t("items.hours.subContent"),
+    },
+  ];
   return (
     <section id="contact" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
@@ -47,15 +49,14 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-[#4DA8DA]/10 text-[#1B6CA8] rounded-full text-sm font-medium mb-4">
-            Hubungi Kami
+            {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Siap Memulai{" "}
-            <span className="text-[#1B6CA8]">Perjalanan Anda?</span>
+            {t("title")}{" "}
+            <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Kami siap membantu Anda memulai langkah menuju karier profesional di
-            Jepang.
+            {t("description")}
           </p>
         </motion.div>
 
