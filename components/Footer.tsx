@@ -131,7 +131,7 @@ export default function Footer() {
           className="border-t border-white/10 mt-12 pt-8 text-center"
         >
           <p className="text-white/50 text-sm">
-            © 2021 - {new Date().getFullYear()} Kinki Sultra Sinergi (KSS). All rights reserved ny Scale.
+            © 2021 - {new Date().getFullYear()} Kinki Sultra Sinergi (KSS). All rights reserved by Scale.
           </p>
         </motion.div>
       </div>
