@@ -3,6 +3,16 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider } from 'next-intl';
 import { getTranslations } from "next-intl/server";
+import { BotIdClient } from 'botid/client';
+
+const protectedRoutes = [
+  {
+    path: '/api/checkout',
+    method: 'POST',
+  },
+];
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -55,6 +65,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning className="scroll-smooth">
+      <header>
+        <BotIdClient protect={protectedRoutes} />
+      </header>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
