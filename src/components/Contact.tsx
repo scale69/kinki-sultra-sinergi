@@ -5,8 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-
-
 export default function Contact() {
   const t = useTranslations("data.Contact");
   const contactInfo = [
@@ -39,7 +37,10 @@ export default function Contact() {
     },
   ];
   return (
-    <section id="contact" className="py-20 md:py-28 bg-background">
+    <section
+      id="contact"
+      className="py-20 md:py-28 bg-background w-full overflow-hidden"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -68,10 +69,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div
-
-              className="grid sm:grid-cols-2 gap-6 mb-8"
-            >
+            <div className="grid sm:grid-cols-2 gap-6 mb-8">
               {contactInfo.map((info, index) => (
                 <motion.div
                   key={index}
@@ -89,8 +87,7 @@ export default function Contact() {
                         <h3 className="font-semibold text-foreground mb-1">
                           {info.title}
                         </h3>
-                        <p
-                          className="text-[#1B6CA8] font-medium">
+                        <p className="text-[#1B6CA8] font-medium">
                           {info.content}
                         </p>
                         <p className="text-sm text-muted-foreground">
@@ -99,7 +96,6 @@ export default function Contact() {
                       </CardContent>
                     </Card>
                   </a>
-
                 </motion.div>
               ))}
             </div>
@@ -127,7 +123,6 @@ export default function Contact() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   />
-
                 </div>
               </div>
             </Card>

@@ -1,25 +1,53 @@
-"use client"
+"use client";
 
-import { motion } from 'framer-motion'
-import { MessageCircle, ClipboardCheck, FileText, Plane, HeartHandshake } from 'lucide-react'
-import { useTranslations } from 'next-intl';
+import { motion } from "framer-motion";
+import {
+  MessageCircle,
+  ClipboardCheck,
+  FileText,
+  Plane,
+  HeartHandshake,
+} from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const icons = [MessageCircle, ClipboardCheck, FileText, Plane, HeartHandshake]
+const icons = [MessageCircle, ClipboardCheck, FileText, Plane, HeartHandshake];
 
 export default function Process() {
   const t = useTranslations("data.Process");
 
-
   const steps = [
-    { icon: icons[0], title: t("steps.1.title"), description: t("steps.1.description") },
-    { icon: icons[1], title: t("steps.2.title"), description: t("steps.2.description") },
-    { icon: icons[2], title: t("steps.3.title"), description: t("steps.3.description") },
-    { icon: icons[3], title: t("steps.4.title"), description: t("steps.4.description") },
-    { icon: icons[4], title: t("steps.5.title"), description: t("steps.5.description") },
-  ]
+    {
+      icon: icons[0],
+      title: t("steps.1.title"),
+      description: t("steps.1.description"),
+    },
+    {
+      icon: icons[1],
+      title: t("steps.2.title"),
+      description: t("steps.2.description"),
+    },
+    {
+      icon: icons[2],
+      title: t("steps.3.title"),
+      description: t("steps.3.description"),
+    },
+    {
+      icon: icons[3],
+      title: t("steps.4.title"),
+      description: t("steps.4.description"),
+    },
+    {
+      icon: icons[4],
+      title: t("steps.5.title"),
+      description: t("steps.5.description"),
+    },
+  ];
 
   return (
-    <section id="process" className="py-20 md:py-28 bg-background">
+    <section
+      id="process"
+      className="py-20 md:py-28 bg-background w-full overflow-hidden"
+    >
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +60,8 @@ export default function Process() {
             {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {t("title")}{" "} <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
+            {t("title")}{" "}
+            <span className="text-[#1B6CA8]">{t("titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             {t("description")}
@@ -72,7 +101,9 @@ export default function Process() {
                 whileHover={{ x: 5 }}
                 className="flex-1 bg-card rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-border"
               >
-                <h3 className="text-lg font-bold text-foreground mb-2">{step.title}</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2">
+                  {step.title}
+                </h3>
                 <p className="text-muted-foreground">{step.description}</p>
               </motion.div>
             </motion.div>
@@ -80,5 +111,5 @@ export default function Process() {
         </div>
       </div>
     </section>
-  )
+  );
 }

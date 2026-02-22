@@ -9,17 +9,17 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
-    return (
-        <main className="min-h-screen">
-            <Navbar />
-            <Header />
-            <About />
-            <Services />
-            <Partners />
-            <Process />
-            <Testimonials />
-            <Contact />
-            <Footer />
-        </main>
-    )
+  return (
+    <main className="min-h-screen">
+      <Navbar />
+      <Header />
+      <About />
+      <Services />
+      <Partners />
+      <Process />
+      <Testimonials />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }
