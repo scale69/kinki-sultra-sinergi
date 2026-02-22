@@ -31,7 +31,7 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { name: t("Navbar.Link.Home"), href: "#" },
+    { name: t("Navbar.Link.Home"), href: "#home" },
     { name: t("Navbar.Link.About"), href: "#about" },
     { name: t("Navbar.Link.Service"), href: "#services" },
     { name: t("Navbar.Link.Process"), href: "#process" },
@@ -51,16 +51,15 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-lg"
-          : "bg-white/5 backdrop-blur-lg border-b border-white/20"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-background/95 backdrop-blur-md shadow-lg"
+        : "bg-white/5 backdrop-blur-lg border-b border-white/20"
+        }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center  justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="#" className="flex items-center justify-center space-x-2">
+          <a href="/" className="flex items-center justify-center space-x-4">
             <div className="w-10 h-10  flex items-center justify-center">
               <Image
                 src={"/kss.png"}
@@ -70,13 +69,11 @@ export default function Navbar() {
               />
             </div>
             <span
-              className={`font-bold  text-lg md:text-xl ${
-                isScrolled ? "text-foreground" : "text-white"
-              }`}
+              className={` font-light   ${isScrolled ? "text-[#0d5f8b]" : "text-white"}`}
             >
               Kinki Sultra Sinergi
             </span>
-          </Link>
+          </a>
 
           {/* Language switcher + Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
@@ -86,13 +83,12 @@ export default function Navbar() {
                   key={code}
                   type="button"
                   onClick={() => switchLocale(code)}
-                  className={`min-w-[2.25rem] rounded-md px-2.5 py-1 text-sm font-medium transition-colors ${
-                    locale === code
-                      ? "bg-[#4DA8DA] text-white"
-                      : isScrolled
-                        ? "text-foreground hover:bg-muted"
-                        : "text-white/90 hover:bg-white/10"
-                  }`}
+                  className={`min-w-[2.25rem] rounded-md px-2.5 py-1 text-sm font-medium transition-colors ${locale === code
+                    ? "bg-[#4DA8DA] text-white"
+                    : isScrolled
+                      ? "text-foreground hover:bg-muted"
+                      : "text-white/90 hover:bg-white/10"
+                    }`}
                 >
                   {label}
                 </button>
@@ -103,9 +99,8 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`font-medium transition-colors hover:text-[#4DA8DA] ${
-                    isScrolled ? "text-foreground" : "text-white"
-                  }`}
+                  className={`font-medium transition-colors hover:text-[#4DA8DA] ${isScrolled ? "text-foreground" : "text-white"
+                    }`}
                 >
                   {item.name}
                 </Link>
