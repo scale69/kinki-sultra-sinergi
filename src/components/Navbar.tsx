@@ -53,7 +53,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
         ? "bg-background/95 backdrop-blur-md shadow-lg"
-        : "bg-white/5 backdrop-blur-lg border-b border-white/20"
+        : "bg-white/40 backdrop-blur-lg border-b border-white/20"
         }`}
     >
       <div className="container mx-auto px-4">
@@ -69,7 +69,7 @@ export default function Navbar() {
               />
             </div>
             <span
-              className={` font-light   ${isScrolled ? "text-[#0d5f8b]" : "text-white"}`}
+              className={` font-serif italic ${isScrolled ? "text-[#0d5f8b]" : "text-[#054060]"}`}
             >
               Kinki Sultra Sinergi
             </span>
@@ -99,7 +99,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`font-medium transition-colors hover:text-[#4DA8DA] ${isScrolled ? "text-foreground" : "text-white"
+                  className={`font-medium transition-colors ${isScrolled ? "text-foreground hover:text-[#69a4c3]" : "hover:text-[#054060]  text-white"
                     }`}
                 >
                   {item.name}
