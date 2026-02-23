@@ -1,0 +1,205 @@
+# ==============================================================
+# robots.txt - Inka Global Management
+# Website: https://inkaglobalmanagement.com
+# Last Updated: 2026-02-23
+# ==============================================================
+
+# ---------------------------------------------------------------
+# Default: Allow all well-behaved crawlers
+# ---------------------------------------------------------------
+User-agent: *
+Allow: /
+
+# Allow all locale paths (id, en, jp)
+Allow: /id/
+Allow: /en/
+Allow: /jp/
+
+# Allow main pages
+
+
+# Disallow Next.js internal paths
+Disallow: /_next/
+Disallow: /api/
+Disallow: /_vercel/
+
+# Disallow dev/test/admin areas (precaution)
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+Disallow: /.env
+Disallow: /*.json$
+
+# ---------------------------------------------------------------
+# Google Search Bot
+# ---------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+Allow: /id/
+Allow: /en/
+Allow: /jp/
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 1
+
+# ---------------------------------------------------------------
+# Google Image Bot
+# ---------------------------------------------------------------
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.gif$
+Disallow: /_next/static/
+
+# ---------------------------------------------------------------
+# Bing / Microsoft Bot
+# ---------------------------------------------------------------
+User-agent: Bingbot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 2
+
+# ---------------------------------------------------------------
+# Yahoo Search Bot
+# ---------------------------------------------------------------
+User-agent: Slurp
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 2
+
+# ---------------------------------------------------------------
+# DuckDuckGo Bot
+# ---------------------------------------------------------------
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 2
+
+# ---------------------------------------------------------------
+# Yandex (Russian Search Engine)
+# ---------------------------------------------------------------
+User-agent: YandexBot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 3
+
+# ---------------------------------------------------------------
+# Baidu (Chinese Search Engine)
+# ---------------------------------------------------------------
+User-agent: Baiduspider
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 3
+
+# ---------------------------------------------------------------
+# LinkedIn Bot (for social previews)
+# ---------------------------------------------------------------
+User-agent: LinkedInBot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# ---------------------------------------------------------------
+# Twitter / X Bot (social preview cards)
+# ---------------------------------------------------------------
+User-agent: Twitterbot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# ---------------------------------------------------------------
+# Facebook Bot (og:image previews)
+# ---------------------------------------------------------------
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# ---------------------------------------------------------------
+# WhatsApp Link Preview Bot
+# ---------------------------------------------------------------
+User-agent: WhatsApp
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+# ---------------------------------------------------------------
+# Applebot (Apple Search / Siri)
+# ---------------------------------------------------------------
+User-agent: Applebot
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Crawl-delay: 2
+
+# ---------------------------------------------------------------
+# Blocked: AI scraper / AI training bots
+# (Protect content from being used for AI training)
+# ---------------------------------------------------------------
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: peer39_crawler
+Disallow: /
+
+User-agent: peer39_crawler/1.0
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+# ---------------------------------------------------------------
+# Blocked: Scrapers & aggressive bots
+# ---------------------------------------------------------------
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ---------------------------------------------------------------
+# Sitemap Location
+# ---------------------------------------------------------------
+Sitemap: https://kinki-sultra-sinergi.com/sitemap.xml
