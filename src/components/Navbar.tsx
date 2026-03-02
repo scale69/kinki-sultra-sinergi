@@ -35,6 +35,7 @@ export default function Navbar() {
     { name: t("Navbar.Link.About"), href: "#about" },
     { name: t("Navbar.Link.Service"), href: "#services" },
     { name: t("Navbar.Link.Process"), href: "#process" },
+    { name: t("Navbar.Link.Gallery"), href: "#gallery" },
     { name: t("Navbar.Link.Contact"), href: "#contact" },
   ];
 

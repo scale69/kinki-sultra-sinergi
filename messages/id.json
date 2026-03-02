@@ -16,6 +16,7 @@
                 "About": "Tentang",
                 "Service": "Layanan",
                 "Process": "Peoses",
+                "Gallery": "Galeri",
                 "Contact": "Kontak"
             }
         },
@@ -158,6 +159,40 @@
                     "name": "Ahmad Hidayat",
                     "role": "Peserta Program Tokutei Ginou",
                     "content": "KSS membantu saya dari awal sampai saya bisa bekerja di Jepang dengan aman. Semua proses transparan dan sesuai regulasi."
+                }
+            }
+        },
+        "Gallery": {
+            "badge": "Dokumentasi Peserta",
+            "title": "Galeri",
+            "titleHighlight": "Magang Jepang",
+            "description": "Momen-momen penting perjalanan peserta, mulai dari proses seleksi, pelatihan, hingga keberangkatan ke Jepang.",
+            "clickHint": "Klik salah satu foto untuk melihat tampilan lebih besar.",
+            "close": "Tutup",
+            "items": {
+                "1": {
+                    "alt": "Peserta magang Jepang berpose bersama di aula",
+                    "caption": "Seleksi dan penandatanganan dokumen peserta magang Jepang."
+                },
+                "2": {
+                    "alt": "Peserta magang Jepang berfoto di depan sekolah bahasa",
+                    "caption": "Pengukuhan peserta di lingkungan sekolah bahasa Jepang."
+                },
+                "3": {
+                    "alt": "Peserta magang Jepang di bandara sebelum keberangkatan",
+                    "caption": "Keberangkatan peserta magang menuju Jepang."
+                },
+                "4": {
+                    "alt": "Peserta magang dalam sesi seleksi resmi",
+                    "caption": "Sesi seleksi dan wawancara peserta magang."
+                },
+                "5": {
+                    "alt": "Sesi orientasi di ruang kelas",
+                    "caption": "Sesi orientasi dan pembekalan di ruang kelas bersama pembina."
+                },
+                "6": {
+                    "alt": "Berfoto bersama di depan fasilitas pelatihan di Jepang",
+                    "caption": "Berfoto bersama di depan fasilitas pelatihan sebagai bagian dari program pembelajaran."
                 }
             }
         },

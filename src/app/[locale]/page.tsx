@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Partners from "@/components/Partners";
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Partners />
       <Process />
+      <Gallery />
       <Testimonials />
       <Contact />
       <Footer />

@@ -13,7 +13,7 @@ export default function Contact() {
       title: t("items.address.title"),
       content: t("items.address.content"),
       subContent: t("items.address.subContent"),
-      url: "https://maps.app.goo.gl/ymyYrhzLB7pht25p9",
+      url: "https://maps.app.goo.gl/ttRDqhukdqYhLbV78",
     },
     {
       icon: Mail,
@@ -115,7 +115,7 @@ export default function Contact() {
                   {/* <MapPin className="h-12 w-12 text-[#1B6CA8] mx-auto mb-3" /> */}
                   <iframe
                     className="w-full h-64"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.4551245548196!2d122.56300010886046!3d-4.040543202189528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d98f38a2fd90ecb%3A0x1238dcca5d888d41!2sLPK%20PT%20KINKI%20SULTRA%20SINERGI!5e0!3m2!1sen!2sjp!4v1771666654204!5m2!1sen!2sjp"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.8919525820156!2d122.56091839999999!3d-4.0424656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d9893000550c1b1%3A0x9bbcb558e88f7e76!2sLPK%20PT%20KINKI%20SULTRA%20SINERGI!5e0!3m2!1sen!2sjp!4v1772461974585!5m2!1sen!2sjp"
                     width={600}
                     height={450}
                     style={{ border: 0 }}

@@ -16,6 +16,7 @@
                 "About": "About",
                 "Service": "Services",
                 "Process": "Process",
+                "Gallery": "Galery",
                 "Contact": "Contact"
             }
         },
@@ -158,6 +159,40 @@
                     "name": "Ahmad Hidayat",
                     "role": "Tokutei Ginou Program Participant",
                     "content": "KSS helped me from the beginning until I could work safely in Japan. The entire process was transparent and compliant with regulations."
+                }
+            }
+        },
+        "Gallery": {
+            "badge": "Participant Documentation",
+            "title": "Gallery",
+            "titleHighlight": "Japan Internship Program",
+            "description": "Key moments of participants’ journey, from the selection process and preparatory training to their departure for Japan.",
+            "clickHint": "Click on a photo to view a larger version.",
+            "close": "Close",
+            "items": {
+                "1": {
+                    "alt": "Technical intern trainees posing together in a hall",
+                    "caption": "Selection process and document signing session for technical intern trainees."
+                },
+                "2": {
+                    "alt": "Technical intern trainees taking a photo in front of a Japanese language school",
+                    "caption": "Official induction and orientation session at the Japanese language school."
+                },
+                "3": {
+                    "alt": "Technical intern trainees at the airport before departure",
+                    "caption": "Departure of technical intern trainees heading to Japan."
+                },
+                "4": {
+                    "alt": "Technical intern trainees attending an official interview session",
+                    "caption": "Official selection and interview session for technical intern trainees."
+                },
+                "5": {
+                    "alt": "Orientation session inside a classroom",
+                    "caption": "Pre-departure orientation and training session conducted by instructors."
+                },
+                "6": {
+                    "alt": "Group photo in front of a training facility in Japan",
+                    "caption": "Group photo taken in front of the training facility as part of the program."
                 }
             }
         },
