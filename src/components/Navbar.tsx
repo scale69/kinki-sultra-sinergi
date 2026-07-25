@@ -40,10 +40,19 @@ export default function Navbar() {
   ];
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        setIsScrolled((prev) => {
+          const next = window.scrollY > 50;
+          return prev === next ? prev : next;
+        });
+        ticking = false;
+      });
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -52,9 +61,9 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transform-gpu transition-colors duration-300 ${isScrolled
         ? "bg-background/95 backdrop-blur-md shadow-lg"
-        : "bg-white/40 backdrop-blur-lg border-b border-white/20"
+        : "bg-white/40 backdrop-blur-md border-b border-white/20"
         }`}
     >
       <div className="container mx-auto px-4">
